@@ -12,7 +12,7 @@
   "kv_namespaces": [
     {
       "binding": "HUB_KV",
-      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+      "id": "624a3e0157c5486d91376383d202f746"
     }
   ],
   "vars": {
