@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hub-ca-nhan",
+  "main": "./src/server/index.ts",
+  "compatibility_date": "2026-04-01",
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "HUB_KV",
+      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+    }
+  ],
+  "vars": {
+    "GDRIVE_ROOT_FOLDER_ID": "17p6bKfYSoXevyRjzcH90COqLO0U1wURF"
+  }
+}
+

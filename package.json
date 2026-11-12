@@ -1,0 +1,33 @@
+{
+  "name": "hub-ca-nhan",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite build && vite preview",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "deploy": "vite build && wrangler deploy",
+    "hash-password": "node scripts/hash-password.mjs",
+    "get-google-token": "node scripts/get-google-token.mjs"
+  },
+  "dependencies": {
+    "hono": "^4.13.18",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.69.0",
+    "@cloudflare/workers-types": "^5.20261110.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "typescript": "^5.8.2",
+    "vite": "^8.0.0",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.160.1"
+  }
+}

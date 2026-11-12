@@ -1,0 +1,16 @@
+# Copy file này thành .dev.vars khi chạy local (KHÔNG commit .dev.vars lên Git)
+
+# 1. Thông tin đăng nhập Hub (tạo hash bằng lệnh: npm run hash-password)
+AUTH_USERNAME=admin
+AUTH_PEPPER=thay_bang_chuoi_ngau_nhien_64_ky_tu_hex
+AUTH_PASSWORD_HASH=pbkdf2$50000$<salt_hex>$<hash_hex>
+JWT_SECRET=thay_bang_chuoi_ngau_nhien_64_ky_tu_hex
+
+# 2. Thông tin Google Drive OAuth2 (lấy refresh token bằng lệnh: npm run get-google-token)
+GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=your-client-secret
+GOOGLE_REFRESH_TOKEN=your-refresh-token
+
+# 3. ID thư mục Google Drive gốc (mặc định đã set trong wrangler.jsonc)
+GDRIVE_ROOT_FOLDER_ID=17p6bKfYSoXevyRjzcH90COqLO0U1wURF
+
